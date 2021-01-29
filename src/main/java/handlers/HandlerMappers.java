@@ -13,11 +13,10 @@ public class HandlerMappers {
 
     private List<ParameterMapper> parameterMapperList;
 
-    public HandlerMappers(String url, Object targetObj, Method method, List<ParameterMapper> parameterMapperList) {
+    public HandlerMappers(String url, Object targetObj, Method method) {
         this.url = url;
         this.targetObj = targetObj;
         this.method = method;
-        this.parameterMapperList = parameterMapperList;
     }
 
     public String getUrl() {
